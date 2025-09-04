@@ -74,7 +74,7 @@ onMounted(async () => {
 
   const pyodide = await initPyodide({
     indexURL: "/pyodide/",
-    packages: ["numpy", "micropip"],
+    packages: ["numpy", "micropip", "pydantic"],
     wheelFiles: ["rsa_json_encryption-0.1.0-py3-none-any.whl"],
     mountFiles: {
       "/tmp/private_key.pem": "/tmp/private_key.pem",
